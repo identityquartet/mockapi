@@ -1,11 +1,23 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
+  "users": [
+    { "id": 1, "name": "Alice", "age": 28, "city": "Dublin", "active": true, "score": 82 },
+    { "id": 2, "name": "Bob", "age": 34, "city": "Cork", "active": false, "score": 67 },
+    { "id": 3, "name": "Charlie", "age": 29, "city": "Galway", "active": true, "score": 91 },
+    { "id": 4, "name": "Diana", "age": 41, "city": "Dublin", "active": true, "score": 74 },
+    { "id": 5, "name": "Eoin", "age": 22, "city": "Limerick", "active": false, "score": 55 }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "posts": [
+    { "id": 1, "userId": 1, "title": "Intro to Java", "likes": 25, "tags": ["java", "backend"] },
+    { "id": 2, "userId": 2, "title": "Spring Boot Guide", "likes": 42, "tags": ["spring", "java"] },
+    { "id": 3, "userId": 3, "title": "React Basics", "likes": 37, "tags": ["frontend", "react"] },
+    { "id": 4, "userId": 1, "title": "Docker for Devs", "likes": 56, "tags": ["devops", "docker"] },
+    { "id": 5, "userId": 4, "title": "System Design 101", "likes": 18, "tags": ["architecture", "design"] }
+  ],
+  "comments": [
+    { "id": 1, "postId": 1, "author": "Charlie", "text": "Great article!" },
+    { "id": 2, "postId": 1, "author": "Bob", "text": "Very helpful, thanks!" },
+    { "id": 3, "postId": 2, "author": "Alice", "text": "Saved me a lot of time." },
+    { "id": 4, "postId": 3, "author": "Diana", "text": "Clear and concise." },
+    { "id": 5, "postId": 4, "author": "Eoin", "text": "Can you cover Kubernetes next?" }
+  ]
 }
